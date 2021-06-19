@@ -1,0 +1,204 @@
+[
+  {
+    "context": "allumage",
+    "signal": "a",
+    "ordre": [
+      "allume",
+      "allume la lumiére",
+      "éclaire",
+      "éclaire la maison"
+    ],
+    "reponse": [
+      "D'accord M. j'allume",
+      "Okay Monsieur",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "eteint",
+    "signal": "A",
+    "ordre": [
+      "éteins",
+      "éteins la lumiére",
+      "arrête d'éclairé",
+      "éclaire moins"
+    ],
+    "reponse": [
+      "D'accord M. j'éteint",
+      "Okay Monsieur",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "allumageVentilateur",
+    "signal": "b",
+    "ordre": [
+      "allume le ventilateur",
+      "ventile",
+      "ventile la maison",
+      "de l'air"
+    ],
+    "reponse": [
+      "c'est sans soucis Monsieur",
+      "ventilateur allumer",
+      "Okay Monsieur",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "eteintVentilateur",
+    "signal": "B",
+    "ordre": [
+      "arrête de ventiler",
+      "éteins le ventilateur",
+      "ventile moins"
+    ],
+    "reponse": [
+      "D'accord M. j'éteint",
+      "Okay Monsieur",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "ouverturePorte",
+    "signal": "d",
+    "ordre": [
+      "ouvre la porte",
+      "ouverture de la porte",
+      "porte ouvre toi",
+      "je veux sortir"
+    ],
+    "reponse": [
+      "D'accord M. j'ouvre la porte",
+      "Okay M. où allez vous?",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "ouvertureFenetre",
+    "signal": "c",
+    "ordre": [
+      "ouvre la fenêtre",
+      "ouverture de la fenêtre",
+      "fenêtre ouvre toi",
+      "aére la maison",
+      "ouvre les volets"
+    ],
+    "reponse": [
+      "D'accord M. j'ouvre la fenêtre",
+      "vos désir sont des ordre monsieur",
+      "je m'y mets tout-de-suite",
+      "Votre maison est maintenant aérée monsieur"
+    ]
+  },
+  {
+    "context": "fermeturePorte",
+    "signal": "D",
+    "ordre": [
+      "ferme la porte",
+      "fermeture de la porte",
+      "porte ferme toi"
+    ],
+    "reponse": [
+      "D'accord M. je ferme la porte",
+      "Okay je bloque l'issue",
+      "vos désir sont des ordre Monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "fermetureFenetre",
+    "signal": "C",
+    "ordre": [
+      "ferme la fenêtre",
+      "fermeture de la fenêtre",
+      "fenêtre ferme toi"
+    ],
+    "reponse": [
+      "D'accord M. je ferme la fenêtre",
+      "Okay M. je bloque les issues",
+      "vos désir sont des ordre Monsieur",
+      "je m'y mets tout-de-suite"
+    ]
+  },
+  {
+    "context": "verouillageMaison",
+    "signal": "E",
+    "ordre": [
+      "verrouille la maison",
+      "ferme tout"
+    ],
+    "reponse": [
+      "D'accord M. je ferme la fenêtre et la porte",
+      "Okay M. je bloque les issues",
+      "vos désir sont des ordre Monsieur",
+      "je m'y mets tout-de-suite",
+      "Votre maison est maintenant vérouillée monsieur",
+      "Vous êtes maintenant en sécurité"
+    ]
+  },
+  {
+    "context": "deverrouillageMaison",
+    "signal": "e",
+    "ordre": [
+      "déverrouille la maison",
+      "ouvre tout"
+    ],
+    "reponse": [
+      "D'accord M. j'ouvre la fenêtre et la porte",
+      "Okay M. j'ouvre les issues",
+      "vos désir sont des ordre Monsieur",
+      "je m'y mets tout-de-suite",
+      "Votre maison est maintenant dévérouillée monsieur"
+    ]
+  },
+  {
+    "context": "Urgence",
+    "ordre": [
+      "envoie de l'aide",
+      "j'ai besoin d'aide",
+      "aide moi",
+      "appéle les urgences"
+    ],
+    "reponse": [
+      "okay monsieur j'appelle les urgences",
+      "d'accord M. je fais aussi vite que je peux"
+    ]
+  },
+  {
+    "context": "remerciment",
+    "ordre": [
+      "merci",
+      "ok",
+      "d'accord"
+    ],
+    "reponse": [
+      "Tout le plaisir est pour moi",
+      "je vous en prie Monsieur",
+      "ce fût un plaisir de vous aider Monsieur",
+      "Avez vous besoin d'autre chose monsieur?",
+      "faites moi signe en cas de nouveau besoin"
+    ]
+  },
+  {
+    "context": "statistic",
+    "ordre": [
+      "quels sont les statistique de la maison",
+      "les statistiques"
+    ],
+    "signal": "f"
+  },
+  {
+    "context": "definition",
+    "ordre": [
+      "que veut dire",
+      "que signifie",
+      "c'est quoi"
+    ]
+  }
+]

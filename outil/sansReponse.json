@@ -1,0 +1,33 @@
+{
+  "Bienvenue": [
+    "Heureuse de vous revoir M.",
+    "Bienvenue sur Chester M.",
+    "Comment-allez vous M.",
+    "C'est un plaisir de vous revoir M.",
+    "ça fait un bail M. "
+  ],
+  "Refu": [
+    "Désolé M. vous n'avez pas accés à ce logiciel",
+    "L'accès à ce logiciel vous a été refusé",
+    "Désolé M. mais vous n'avez pas été reconnu",
+    "Vous n'avez pas les droit d'accés à ce logiciel"
+  ],
+  "Ecoute": [
+    "Je vous écoute M., Que désirez vous?",
+    "Je vous suis toute ouïe monsieur ",
+    "Avez vous besoin de l'un de mes services monsieur ?",
+    "Que puis-je pour vous monsieur ",
+    "Comment puis je vous aider Monsieur ",
+    "En quoi puis-je vous aider monsieur"
+  ],
+  "ErreurWifi" : [
+    "M. s'il vous plaît veillez vérifier votre connection wifi",
+    "Une erreur de connection à internet a été produite ",
+    "M. il se pourraît que vous n'ayez aucun accés à internet"
+  ],
+  "ErreurComprehension": [
+    "Désolé M. mais ceci ne fait pas partir de mes capacités",
+    "Hum, désolé M. mais je ne connais pas encore faire cela",
+    "Mince M. ceci est trop difficile pour moi"
+  ]
+}
