@@ -1,6 +1,6 @@
 from json import *
 from random import randint
-import webbrowser as wb
+from requests import get
 import pyautogui as pt
 from time import sleep
 from selenium import webdriver
@@ -9,7 +9,7 @@ import serial
 from serial.serialutil import SerialException
 
 try:
-    s = serial.Serial('COM4', 9600, timeout=2)
+    s = serial.Serial('COM3', 9600, timeout=2)
 except SerialException:
     pass
 with open('outil/avecReponse.json', "r", encoding="utf-8") as json_data:
@@ -40,12 +40,27 @@ def analysons(txt):
                 try:
                     txt = txt.replace(i, "")
                     txt = txt.replace(" ", "_")
-                    driver = webdriver.Firefox()
+                    '''from selenium.webdriver.chrome.options import Options
+                    CHROME_PATH = '/usr/bin/google-chrome'
+                    CHROMEDRIVER_PATH = '/usr/bin/chromedriver'
+                    WINDOW_SIZE = "1920,1080"
+
+                    chrome_options = Options()  
+                    chrome_options.add_argument("--headless")  
+                    chrome_options.add_argument("--window-size=%s" % WINDOW_SIZE)
+                    chrome_options.binary_location = CHROME_PATH
+
+                    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH,
+                                            chrome_options=chrome_options
+                                            ) '''
+                    driver=webdriver.Chrome()
                     driver.get("https://fr.wikipedia.org/wiki/" + txt)
                     elem = driver.find_element_by_xpath(
                         "//div[@id='mw-content-text']//p[1]").text + driver.find_element_by_xpath(
                         "//div[@id='mw-content-text']//p[2]").text
                     elem = elem
+                    if len(elem.split("."))>5:
+                        elem=".".join(elem.split(".")[:5])
                     return "D'apres Wikipedia, " + elem
                 except:
                     return "Desole monsieur mais l'installation de Chester n'est pas complete pour pouvoir executer cette ordre"
@@ -66,16 +81,8 @@ def analysons(txt):
                                 sleep(0.1)
                             txt=txt.replace("b","")
                             txt=txt.replace("'","")
-                            txt=txt.split(" ")
                             print(txt)
-                            a=int(txt[2])
-                            if a<500:
-                                txt[2]="faible"
-                            if a<1000:
-                                txt[2]="moyenne"
-                            else:
-                                txt[2]="élévée"
-                            return "l'humidité de votre maison est de "+txt[0]+"%, la température est de "+txt[1]+" dégrés celsuis et la luminosité est "+txt[2]
+                            return "l'humidité de votre maison est de "+txt[0]+"%, la température est de "+txt[1]
                         else:
                             return i['reponse'][randint(0, len(i['reponse']) - 1)]
 
@@ -95,6 +102,7 @@ def analysons(txt):
         return dat["ErreurComprehension"][randint(0, len(dat['ErreurComprehension']) - 1)]
 
 def urgenceCall():
-    wb.open("https://wa.me/237696527034?text=Salut%20Svp%20jai%20besoin%20daide%20en%20urgence")
-    sleep(5)
-    pt.press("enter")
+    try:
+       get("https://kayrawhatsappbot.herokuapp.com/")
+    except Exception:
+        pass

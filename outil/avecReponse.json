@@ -4,7 +4,7 @@
     "signal": "a",
     "ordre": [
       "allume",
-      "allume la lumiére",
+      "allume la lumière",
       "éclaire",
       "éclaire la maison"
     ],
@@ -20,12 +20,12 @@
     "signal": "A",
     "ordre": [
       "éteins",
-      "éteins la lumiére",
-      "arrête d'éclairé",
+      "éteins la lumière",
+      "arrête d'éclairer",
       "éclaire moins"
     ],
     "reponse": [
-      "D'accord M. j'éteint",
+      "D'accord M. j'éteins",
       "Okay Monsieur",
       "vos désir sont des ordre monsieur",
       "je m'y mets tout-de-suite"
@@ -81,7 +81,7 @@
   },
   {
     "context": "ouvertureFenetre",
-    "signal": "c",
+    "signal": "C",
     "ordre": [
       "ouvre la fenêtre",
       "ouverture de la fenêtre",
@@ -113,7 +113,7 @@
   },
   {
     "context": "fermetureFenetre",
-    "signal": "C",
+    "signal": "c",
     "ordre": [
       "ferme la fenêtre",
       "fermeture de la fenêtre",
@@ -175,6 +175,7 @@
     "ordre": [
       "merci",
       "ok",
+      "okay",
       "d'accord"
     ],
     "reponse": [

@@ -3,7 +3,7 @@ import pyttsx3
 from time import sleep
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty("voice", voices[3].id)
+engine.setProperty("voice", voices[0].id)
 engine.setProperty("rate", 150)
 
 main=[]

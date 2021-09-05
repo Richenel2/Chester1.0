@@ -33,9 +33,9 @@ void loop()
     }else if(t=="B"){
       digitalWrite(fan,LOW);
     }else if (t=="c"){
-      fenetre('a');
-    }else if(t=="C"){
       fenetre('b');
+    }else if(t=="C"){
+      fenetre('a');
     }else if (t=="d"){
       porte('a');
     }else if(t=="D"){
@@ -82,7 +82,7 @@ void fenetre(char a){
 void temperatureEtHumidite(){
   
   DHT11.read(DHT11PIN);
-  Serial.print((String)DHT11.humidity+" "+(String)DHT11.temperature+" "+(String)analogRead(A0));
+  Serial.print((String)DHT11.humidity+" "+(String)DHT11.temperature);
 }
 
 void verouille( char a){
